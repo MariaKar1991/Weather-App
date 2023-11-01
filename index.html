@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and viewport configuration -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <!-- Linking external stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
+      <!-- Heading for the weather app -->
       <h1>Weather App</h1>
+      <!-- Form for user input (city) -->
       <form>
         <input type="text" id="city-input" placeholder="Enter City" />
         <input type="submit" value="Get Weather" />
       </form>
+      <!-- Container for displaying weather data -->
       <div id="weather-data">
+        <!-- Container for weather icon (commented out for now) -->
         <div class="icon">
           <!-- <img 
             src="http://openweathermap.org/img/wn/01d.png"
             alt="Weather Icon"
           /> -->
         </div>
+        <!-- Container for temperature -->
         <div class="temperature"></div>
+        <!-- Container for weather description -->
         <div class="description"></div>
+        <!-- Container for additional weather details (commented out for now) -->
         <div class="details">
           <!-- <div>Feels like: 23°C</div> 
           <div>Humidity: 40%</div>
@@ -29,6 +38,7 @@
         </div>
       </div>
     </div>
+    <!-- Script tag for JavaScript code (index.js) -->
     <script src="index.js"></script>
   </body>
 </html>
